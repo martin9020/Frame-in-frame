@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     
-    `
+    <>
      <!DOCTYPE html><head>
       <title>Game of Life Frame</title>
       <meta property="fc:frame" content="vNext" />
@@ -38,7 +38,7 @@ export default function Page() {
       <meta property="fc:frame:button:3" content="Reset" />
       <meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/gameoflife.js" />
       <h1><iframe src="https://miv.wtf"> </iframe></h1>
-      </head></html>`
-    
+      </head></html>
+    </>
   );
 }
