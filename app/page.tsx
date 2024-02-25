@@ -26,8 +26,17 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <>
-      <h1><iframe src="https://miv.wtf"> </iframe></h1>
+      `<!doctype html><html><head>
+<title>Game of Life Frame</title>
+<meta property="fc:frame" content="vNext" />
+<meta property="fc:frame:image" content="${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/QmQYrWmN73VXtV4ShiDfWsFrzkT6FinvAkVpvaop9HnohD/5.png" />
+<meta property="og:image" content="https://example.com/gameoflife.jpg" />
+<meta property="fc:frame:button:1" content="Start" />
+<meta property="fc:frame:button:2" content="Pause" />
+<meta property="fc:frame:button:3" content="Reset" />
+<meta property="fc:frame:post_url" content="${process.env.NEXT_PUBLIC_BASE_URL}/gameoflife.js" />
+    
+      <h1><iframe src="https://miv.wtf"> </iframe></h1>`
     </>
   );
 }
